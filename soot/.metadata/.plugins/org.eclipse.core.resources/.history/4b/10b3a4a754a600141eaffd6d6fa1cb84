@@ -1,0 +1,18 @@
+package br.com.lealdn;
+
+public class DumpClass {
+	private String hello;
+	
+	DumpClass(final String hello) {
+		this.hello = hello;
+	}
+	
+	public String sayHi() {
+		return "hi";
+	}
+	
+	public String getHello() {
+		return hello;
+	}
+	
+}

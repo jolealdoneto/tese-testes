@@ -1,0 +1,6 @@
+import soot.toolkits.scalar.ForwardFlowAnalysis;
+
+
+public class LocalMustNotAliasAnalysis extends ForwardFlowAnalysis {
+
+}

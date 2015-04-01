@@ -1,0 +1,76 @@
+package br.com.lealdn;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.Scene;
+import soot.SootClass;
+import soot.SootMethod;
+import soot.Unit;
+import soot.Value;
+import soot.jimple.Jimple;
+import soot.jimple.StringConstant;
+
+public class MyMain {
+	
+    public static void main(String[] args) throws FileNotFoundException, IOException
+    {
+    	final SootClass main = Scene.v().loadClassAndSupport("br.com.lealdn.DumpClass");
+    	Scene.v().loadClassAndSupport("br.com.lealdn.Intercept");
+    	SootMethod sootMethod = null;
+    	
+    	for (final SootClass clazz : Scene.v().getClasses()) {
+    		System.out.println("Checking: " + clazz);
+    		for (final SootMethod method : clazz.getMethods()) {
+    			if (SootUtils.isAnnotated(method)) {
+    				sootMethod = method;
+    			}
+    		}
+    	}
+  
+    	if (sootMethod != null) {
+    		System.out.println(sootMethod.retrieveActiveBody());
+    		Iterator<Unit> i = sootMethod.retrieveActiveBody().getUnits().snapshotIterator();
+    		for (Unit u = i.next(); i.hasNext();) {
+    			System.out.println(u);
+    			
+    		}
+    	}
+
+    	//soot.Main.main(new String[] { "-process-dir", "bin" });
+    }  
+    
+    public static class InterceptorTransformer2 extends BodyTransformer {
+    	final Set<Value> requiredValues = new HashSet<>();
+    	@Override
+		protected void internalTransform(Body body, String phase, Map options) {
+			final SootMethod m = body.getMethod();
+			System.out.println(m);
+			if (SootUtils.isAnnotated(m)) {
+				Unit u = null;
+				System.out.println(body);
+			}
+		}
+    }
+    
+    public static class InterceptorTransformer extends BodyTransformer {
+		@Override
+		protected void internalTransform(Body body, String phase, Map options) {
+			final SootMethod m = body.getMethod();
+			System.out.println(m);
+			if (SootUtils.isAnnotated(m)) {
+				final SootMethod intercept = Scene.v().getMethod("<br.com.lealdn.Intercept: int intercept(java.lang.String)>");
+				Iterator<Unit> i  = body.getUnits().snapshotIterator();
+				i.next();
+				
+				body.getUnits().insertAfter(((Jimple.v().newInvokeStmt(Jimple.v().newStaticInvokeExpr(intercept.makeRef(), StringConstant.v(m.getName()))))), i.next());
+			}
+		}
+    }   
+}

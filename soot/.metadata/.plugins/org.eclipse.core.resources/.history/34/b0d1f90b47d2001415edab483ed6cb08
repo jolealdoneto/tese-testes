@@ -1,0 +1,78 @@
+package br.com.lealdn;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.util.Map;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.FileEntity;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import com.esotericsoftware.kryo.Kryo;
+import com.esotericsoftware.kryo.io.Output;
+
+public class Intercept {
+    private static String testing = "NOT MODIFIED";
+    
+    public static void setTesting(final String testing) {
+        Intercept.testing = testing;
+    }
+    public static int intercept(final String methodName) {
+        System.out.println("Intercepted: " + methodName);
+        return 0;
+    }
+    
+    public static String m() {
+        return testing;
+    }
+    
+    public static boolean shouldOffload(final String methodSignature, final Map<Object, Object> args) {
+    	return true;
+    }
+
+    public static Object sendAndSerialize(final String methodSignature, final Map<Object, Object> args) {
+        System.out.println("Intecept");
+        
+        try {
+            final Kryo kryo = new Kryo();
+            final Output output = new Output(new FileOutputStream("output.bin"));
+            kryo.writeObject(output, methodSignature);
+            kryo.writeObject(output, args);
+            output.close();
+
+            //Intercept.sendFile();
+            System.out.println(args);
+            System.out.println("Intercept DONE.");
+            return 2;
+        } catch(Exception ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
+
+    @SuppressWarnings("deprecation")
+    private static void sendFile() {
+        String url = "http://localhost:8081/output.bin";
+        try {
+            final HttpClient httpclient = new DefaultHttpClient();
+
+            final File file = new File("output.bin");
+
+            final HttpPost httppost = new HttpPost(url);
+            final FileEntity fileEntity = new FileEntity(file, "binary/octet-stream");
+
+            httppost.setEntity(fileEntity);
+            final HttpResponse response = httpclient.execute(httppost);
+            //Do something with response...
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+}

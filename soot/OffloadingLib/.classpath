@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/httpclient-win-4.4.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/httpclient-cache-4.4.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/fluent-hc-4.4.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/httpmime-4.4.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/httpclient-4.4.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/httpcore-4.4.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/kryo-3.0.0.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/reflectasm-1.09-shaded.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/minlog-1.2.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/objenesis-1.2.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/home/neto/prj/ufmg/tese/testes/soot/soot-trunk.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

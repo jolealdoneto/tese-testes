@@ -1,0 +1,46 @@
+package br.com.lealdn;
+
+public class DumpClass {
+	private String hello;
+	
+	DumpClass(final String hello) {
+		this.hello = hello;
+	}
+	
+	public static void main(String[] args) {
+		DumpClass dc = new DumpClass("isudhf");
+		
+		System.out.println(dc.sayHi("sidufh"));
+	}
+	
+	@MyAnnotation(jose = "Jose")
+	public String sayHi(final String h) {
+		final Hello hello = new Hello(this.hello);
+		int a = 1;
+		int i = 1 + a;
+		
+		a = hello.hi().hashCode();
+		
+		return ((Integer)a).toString();
+	}
+	
+	public String getHello() {
+		return hello;
+	}
+	
+	class Hello {
+		private final String h;
+		public Hello(final String h) {
+			this.h = h;
+		}
+		
+		public String hi() {
+			return "hi";
+		}
+		
+		public String getH() {
+			return h;
+		}
+	}
+	
+}

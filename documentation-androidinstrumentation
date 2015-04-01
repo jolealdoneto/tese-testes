@@ -1,0 +1,12 @@
+Instrumenting Android app
+=========================
+
+- Build app, get apk
+- Run the AndroidInstrumenter
+    -args:
+    java -cp "/home/neto/prj/ufmg/tese/testes/soot/TestingSoot/lib/*:../../*:."  AndroidInstrument -pp -android-jars /home/neto/adt-bundle-linux-x86_64-20140702/sdk/platforms/android-20 -process-dir /home/neto/prj/android/MyTest/bin/MainActivity-debug.apk -allow-phantom-refs -w
+    "-android-jars /home/neto/adt-bundle-linux-x86_64-20140702/sdk/platforms/android-20 -process-dir /home/neto/prj/ufmg/tese/testes/soot/MainActivity-debug.apk"
+    (was necessary to create a android--1 folder and place there the current api android.jar)
+- jarsign soot output with
+    jarsigner -verbose -keystore ~/.android/debug.keystore sootOutput/MainActivity-debug.apk androiddebugkey -sigalg MD5withRSA -digestalg SHA1
+- profit $$

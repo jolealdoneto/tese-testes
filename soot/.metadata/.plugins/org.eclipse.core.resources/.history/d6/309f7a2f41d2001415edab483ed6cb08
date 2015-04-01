@@ -1,0 +1,56 @@
+package br.com.lealdn;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import com.esotericsoftware.kryo.Kryo;
+import com.esotericsoftware.kryo.io.Input;
+import com.esotericsoftware.kryo.io.Output;
+
+public class DumpClass {
+	private String hello;
+	
+	DumpClass(final String hello) {
+		this.hello = hello;
+	}
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		DumpClass dc = new DumpClass("isudhf");
+        Intercept.setTesting("MODIFIED");
+		System.out.println(dc.sayHi(Intercept.m()));
+	}
+	
+	public static boolean test() {
+		return true;
+	}
+	
+	@MyAnnotation(jose = "Jose")
+	public String sayHi(final String h) {
+		if (DumpClass.test()) {
+			return "1";
+		}
+		final Hello hello = new Hello(h + Intercept.m());
+		return "a" + hello.getH() + " | " + this.hello;
+	}
+	
+	public String getHello() {
+		return hello;
+	}
+	
+	class Hello {
+		private final String h;
+		public Hello(final String h) {
+			this.h = h;
+		}
+		
+		public String hi() {
+			return "hi";
+		}
+		
+		public String getH() {
+			return h;
+		}
+	}
+	
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="soot.toolkits.scalar.ForwardFlowAnalysis"/>
+<fullyQualifiedTypeName name="soot.Unit"/>
+<fullyQualifiedTypeName name="soot.Local"/>
+<fullyQualifiedTypeName name="soot.jimple.InvokeExpr"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JNewExpr"/>
+<fullyQualifiedTypeName name="soot.jimple.Expr"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JimpleLocal"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JInstanceFieldRef"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JGotoStmt"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JAssignStmt"/>
+<fullyQualifiedTypeName name="soot.jimple.StaticFieldRef"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JStaticInvokeExpr"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JSpecialInvokeExpr"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JVirtualInvokeExpr"/>
+<fullyQualifiedTypeName name="soot.jimple.InstanceFieldRef"/>
+<fullyQualifiedTypeName name="soot.baf.internal.BShlInst"/>
+<fullyQualifiedTypeName name="soot.SootFieldRef"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="soot.Modifier"/>
+<fullyQualifiedTypeName name="soot.jimple.Constant"/>
+<fullyQualifiedTypeName name="soot.jimple.AssignStmt"/>
+<fullyQualifiedTypeName name="soot.jimple.JimpleBody"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JInvokeStmt"/>
+<fullyQualifiedTypeName name="com.esotericsoftware.kryo.io.Input"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="com.esotericsoftware.kryo.Kryo"/>
+<fullyQualifiedTypeName name="com.esotericsoftware.kryo.io.Output"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="br.com.lealdn.Intercept"/>
+<fullyQualifiedTypeName name="soot.jimple.InvokeStmt"/>
+<fullyQualifiedTypeName name="soot.jimple.StringConstant"/>
+<fullyQualifiedTypeName name="br.com.lealdn.SootUtils"/>
+<fullyQualifiedTypeName name="soot.jimple.internal.JIfStmt"/>
+<fullyQualifiedTypeName name="soot.jimple.IfStmt"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="soot.BooleanType"/>
+<fullyQualifiedTypeName name="soot.jimple.IntConstant"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="soot.JastAddJ.ReturnStmt"/>
+<fullyQualifiedTypeName name="soot.jimple.ReturnStmt"/>
+<fullyQualifiedTypeName name="soot.VoidType"/>
+<fullyQualifiedTypeName name="soot.RefLikeType"/>
+<fullyQualifiedTypeName name="soot.RefType"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/AndroidInstrument/src/InterceptMethod.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="InterceptMethod"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-android-jars /home/neto/adt-bundle-linux-x86_64-20140702/sdk/platforms/android-20 -process-dir /home/neto/prj/ufmg/tese/testes/soot/MainActivity-debug.apk"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="AndroidInstrument"/>
+</launchConfiguration>

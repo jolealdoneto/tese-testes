@@ -1,0 +1,60 @@
+2015-02-11 16:25:00,393 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /home/neto/prj/ufmg/tese/testes/soot
+2015-02-11 16:25:00,394 INFO  [org.eclim.eclipse.EclimDaemon] Home: /home/neto/eclipse/plugins/org.eclim_2.3.2/
+2015-02-11 16:25:00,394 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2015-02-11 16:25:00,401 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2015-02-11 16:25:00,403 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2015-02-11 16:25:00,506 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2015-02-11 16:25:00,510 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.dltk
+2015-02-11 16:25:00,513 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.wst
+2015-02-11 16:25:00,521 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2015-02-11 16:25:00,524 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.cdt
+2015-02-11 16:25:00,528 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2015-02-11 16:25:00,528 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2015-02-11 16:25:00,531 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2015-02-12 09:05:42,437 INFO  [org.eclim.eclipse.EclimDaemon] Shutting down eclim...
+2015-02-12 09:05:42,441 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
+2015-02-12 09:05:42,445 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.dltk
+2015-02-12 09:05:42,445 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.wst
+2015-02-12 09:05:42,446 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
+2015-02-12 09:05:42,446 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.cdt
+2015-02-12 09:05:42,446 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.
+2015-02-12 14:09:40,739 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /home/neto/prj/ufmg/tese/testes/soot
+2015-02-12 14:09:40,741 INFO  [org.eclim.eclipse.EclimDaemon] Home: /home/neto/eclipse/plugins/org.eclim_2.3.2/
+2015-02-12 14:09:40,741 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2015-02-12 14:09:40,749 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2015-02-12 14:09:40,753 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2015-02-12 14:09:40,874 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2015-02-12 14:09:40,883 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.dltk
+2015-02-12 14:09:40,886 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.wst
+2015-02-12 14:09:40,889 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2015-02-12 14:09:40,891 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.cdt
+2015-02-12 14:09:40,893 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2015-02-12 14:09:40,894 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2015-02-12 14:09:40,894 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2015-02-13 08:50:52,218 INFO  [org.eclim.eclipse.EclimDaemon] Shutting down eclim...
+2015-02-13 08:50:52,220 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
+2015-02-13 08:50:52,222 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.dltk
+2015-02-13 08:50:52,222 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.wst
+2015-02-13 08:50:52,223 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
+2015-02-13 08:50:52,223 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.cdt
+2015-02-13 08:50:52,223 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.
+2015-03-03 11:06:21,988 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /home/neto/prj/ufmg/tese/testes/soot
+2015-03-03 11:06:21,993 INFO  [org.eclim.eclipse.EclimDaemon] Home: /home/neto/eclipse/plugins/org.eclim_2.3.2/
+2015-03-03 11:06:21,994 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2015-03-03 11:06:22,005 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2015-03-03 11:06:22,010 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2015-03-03 11:06:22,169 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2015-03-03 11:06:22,174 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.dltk
+2015-03-03 11:06:22,179 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.wst
+2015-03-03 11:06:22,185 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2015-03-03 11:06:22,195 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.cdt
+2015-03-03 11:06:22,198 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2015-03-03 11:06:22,198 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2015-03-03 11:06:22,198 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2015-03-03 14:18:07,448 INFO  [org.eclim.eclipse.EclimDaemon] Shutting down eclim...
+2015-03-03 14:18:07,453 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
+2015-03-03 14:18:07,456 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.dltk
+2015-03-03 14:18:07,457 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.wst
+2015-03-03 14:18:07,457 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
+2015-03-03 14:18:07,457 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.cdt
+2015-03-03 14:18:07,458 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.
